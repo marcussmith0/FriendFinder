@@ -10,4 +10,31 @@ img {
      width: 900px; 
      height: 500px; 
      margin: 0 auto;
+     border-radius: 4px;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.format {
+    margin-top: 5px;
+}
+
+h3 {  
+    font-family: 'Muli', sans-serif;
+}
+
+h2 {
+    font-family: 'Bree Serif', serif;
+}
+
+.half-rule { 
+    margin-left: 0;
+    text-align: left;
+    width: 50%;
+ }

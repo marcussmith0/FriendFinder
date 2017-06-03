@@ -1,0 +1,26 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "helps you find friends",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "hello world",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcussmith0/FriendFinder.git"
+  },
+  "author": "Marcus Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcussmith0/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/marcussmith0/FriendFinder#readme"
+}

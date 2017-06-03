@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Survey - Welcome to FriendFinder</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Muli|Bree+Serif" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="assets/style/slick-1.6.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/style/slick-1.6.0/slick/slick-theme.css"/>
+
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+
+    <script 
+              src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+              integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+              crossorigin="anonymous"></script>
+    
+
+    
+  
+</head>
+<body>
+
+     <nav class="navbar text-center">
+		 <a href="/home"><h1 name="top" class="navbarH1" style="font-family: 'Lobster', cursive;">FriendFinder</h1></a>
+	</nav>
+
+    <div class="container">
+
+        <h2>About You</h2>
+
+         <hr class="half-rule"/>
+
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <label for="url"><h3>Your name:(Required) </h3></label>
+                <input type="text" class="form-control" id="name">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <label for="url"><h3>Your image url: (Required) </h3></label>
+                <input type="text" class="form-control" id="img">
+            </div>
+        </div>
+
+        <hr class="half-rule"/>
+
+
+             <div class="row form-group">
+                 <div class="col-md-6">
+                    <label for="q1"><h2>Question 1</h2></label><br>
+                    <label for="q1"><h3>I value creativity and curiosity.</h3></label>
+                    <select class="form-control chosen-select" id="q1">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                 </div>
+            </div> 
+
+            <div class="row form-group">
+                 <div class="col-md-6">
+                    <label for="q2"><h2>Question 2</h2></label><br>
+                    <label for="q2"><h3>I talk to myself very often.</h3></label>
+                    <select class="form-control" id="q2">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                </div>
+            </div>
+
+             <div class="row form-group">
+                 <div class="col-md-6">
+                    <label for="q3"><h2>Question 3</h2></label><br>
+                    <label for="q3"><h3>I eat fast food all the time.</h3></label>
+                    <select class="form-control" id="q3">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                 </div>
+            </div>
+
+            <div class="row form-group">
+                 <div class="col-md-6">
+                    <label for="q4"><h2>Question 4</h2></label><br>
+                    <label for="q4"><h3> I am a huge fan of sports.</h3></label>
+                    <select class="form-control" id="q4">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                 </div>
+            </div>
+
+            <div class="row form-group">
+                 <div class="col-md-6">
+                    <label for="q5"><h2>Question 5</h2></label><br>
+                    <label for="q5"><h3>  I love working out.</h3></label>
+                    <select class="form-control" id="q5">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                 </div>
+            </div>
+
+             <div class="row form-group">
+                 <div class="col-md-6">
+                    <label for="q6"><h2>Question 6</h2></label><br>
+                    <label for="q6"><h3>  I love seeing sunshine and rainbows.</h3></label>
+                    <select class="form-control" id="q6">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                 </div>
+            </div>
+
+            <div class="row form-group">
+                 <div class="col-md-6">
+                    <label for="q7"><h2>Question 7</h2></label><br>
+                    <label for="q7"><h3>  I consider myself a geek.</h3></label>
+                    <select class="form-control" id="q7">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                 </div>
+            </div>
+
+              <div class="row form-group">
+                 <div class="col-md-6">
+                    <label for="q8"><h2>Question 8</h2></label><br>
+                    <label for="q8"><h3> I live in my mother's basement.</h3></label>
+                    <select class="form-control" id="q8">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                 </div>
+            </div>
+
+            <div class="row form-group">
+                 <div class="col-md-6">
+                    <label for="q9"><h2>Question 9</h2></label><br>
+                    <label for="q9"><h3> I am exhausted after being around a large group of people.</h3></label>
+                    <select class="form-control" id="q9">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                 </div>
+            </div>
+
+            <div class="row form-group">
+                 <div class="col-md-6">
+                    <label for="q10"><h2>Question 10</h2></label><br>
+                    <label for="q10"><h3> I am overweight.</h3></label>
+                    <select class="form-control" id="q10">
+                        <option>1 (Strongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Strongly Agree)</option>
+                    </select>
+                 </div>
+            </div>
+    
+        <div class="row">
+
+            <div class="col-md-4">
+                <button id="submit" type="button" data-toggle="modal" data-target="#showModal" class="btn btn-success btn-block btn-lg">
+                <span class="glyphicon glyphicon-ok-sign"></span> Submit</button>
+            </div>
+            <div class="col-md-4">
+                 <a href="#top"><button class="btn btn-danger btn-block btn-lg"><span class="glyphicon glyphicon-arrow-up"></span> Back to Top</button></a>
+            </div>
+
+
+        </div>
+
+
+        <!-- Modal -->
+        <div id="showModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="modal-name"></h4>
+            </div>
+            <div class="modal-body">
+
+                <img id="modal-image" src="" height="80px" weight="60px"/>
+                
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+
+        </div>
+        </div>
+
+        <script type="text/javascript">
+
+            $("#submit").on("click", function() {
+
+                var newFriend = {
+
+                    name: $("#name").val().trim(),
+                    image: $("#img").val().trim(),
+                    scores: 
+                            [
+                                $("#q1").val(), $("#q2").val(),  $("#q3").val(),
+                                $("#q4").val(),  $("#q5").val(),  $("#q6").val(),
+                                $("#q7").val(),  $("#q8").val(),  $("#q9").val(),  
+                                $("#q10").val()
+                            ]
+
+                }
+
+                var thisURL = window.location.origin;
+
+                $.post(thisURL + "/api/friends", newFriend, function(data){
+
+                    $("#modal-name").text(data.name);
+                    $('#modal-image').attr("src", data.photo);
+
+                    console.log("thisshouldbeshown: " + data);
+
+                    $("#resultsModal").modal('toggle');
+
+	    	});
+
+                return false;
+            });
+
+        </script>
+
+    </div>
+
+    <br>
+
+
+</body>
+</html>
