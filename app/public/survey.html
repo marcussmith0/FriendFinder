@@ -57,6 +57,7 @@
         </div>
 
         <hr class="half-rule"/>
+        <h3>5 = (Strongly Agree) and 1 = (Strongly Disagree) </h3>
 
 
              <div class="row form-group">
@@ -160,7 +161,7 @@
               <div class="row form-group">
                  <div class="col-md-6">
                     <label for="q8"><h2>Question 8</h2></label><br>
-                    <label for="q8"><h3> I live in my mother's basement.</h3></label>
+                    <label for="q8"><h3> I have many accomplishments.</h3></label>
                     <select class="form-control" id="q8">
                         <option>1</option>
                         <option>2</option>
@@ -188,13 +189,13 @@
             <div class="row form-group">
                  <div class="col-md-6">
                     <label for="q10"><h2>Question 10</h2></label><br>
-                    <label for="q10"><h3> I am overweight.</h3></label>
+                    <label for="q10"><h3> I consider myself a good person.</h3></label>
                     <select class="form-control" id="q10">
-                        <option>1 </option>
+                        <option>1</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
-                        <option>5 </option>
+                        <option>5</option>
                     </select>
                  </div>
             </div>
@@ -239,12 +240,15 @@
 
         <script type="text/javascript">
 
+            var name = $("#name").val().trim();
+            var image = $("#img").val().trim();
+
             $("#submit").on("click", function() {
 
-                var newFriend = {
+                    var newFriend = {
 
-                    name: $("#name").val().trim(),
-                    image: $("#img").val().trim(),
+                    name: name,
+                    image: image,
                     scores: 
                             [
                                 $("#q1").val(), $("#q2").val(),  $("#q3").val(),
@@ -266,17 +270,16 @@
 
                     $("#showModal").modal('toggle');
 
-	    	});
+	    	        });
+
+                    $("#name").val("");
+                    $("#img").val("");
 
                 return false;
             });
 
         </script>
-
     </div>
-
     <br>
-
-
 </body>
 </html>

@@ -32,12 +32,18 @@ module.exports = function(app) {
 
        }
 
+       //this is evaluating if we are on the first person in the array
+       //if we are, the leastDiff will default to the first value of diff
+
        if(i == 0) {
 
            leastDiff = diff;
            personIndex = i;
 
        } else {
+
+        //since we are not on the first person in the array anymore, that means we have a previous difference to 
+        //compare our current difference to
 
            if(diff < leastDiff) {
 
@@ -49,9 +55,6 @@ module.exports = function(app) {
        }
 
     }
-
-      console.log("this returned friends");
-      console.log(friends[personIndex]);
 
       res.json(friends[personIndex]);
       friends.push(req.body);

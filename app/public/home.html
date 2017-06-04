@@ -31,65 +31,24 @@
 
     <div class="container-fluid text-center">
 
-
-        <div class="home-carousel" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
-            <div><img src="assets/images/photo1.jpg"></div>
-            <div><img src="assets/images/photo2.jpg"></div>
-            <div><img src="assets/images/photo3.jpeg"></div>
-            <div><img src="assets/images/photo4.jpeg"></div>
-            <div><img src="assets/images/photo5.jpeg"></div>
-            <div><img src="assets/images/photo6.jpeg"></div>
-            <div><img src="assets/images/photo7.jpeg"></div>
-            <div><img src="assets/images/photo8.jpeg"></div>
-            <div><img src="assets/images/photo9.jpeg"></div>
-            <div><img src="assets/images/photo10.jpg"></div>
-        </div>
-
-
-
-        <div class="row text-center format">
-            <div class="col-md-6 col-md-offset-3">
-                <a href="/survey">
+        <div class="jumbotron">
+            <h1 class="display-3">Find New Friends</h1>
+            <p class="lead">This is a site that will match you with cool people based on our proprietary 
+                            algorithm.</p>
+            <hr class="my-4">
+            <p>Just simply answer our quiz questions.</p>
+            <p class="lead">
+                <a href="/survey" style="text-decoration: none" >
                 <button type="button" class="btn btn-info btn-block btn-lg"><span class="glyphicon glyphicon-list-alt"></span> Take Our Survey </button>
                 </a>
-            </div>
+            </p>
         </div>
-
-    
-
-        <script
-			  src="https://code.jquery.com/jquery-3.2.1.min.js"
-			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			  crossorigin="anonymous"></script>
-
-        <script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
-        <script type="text/javascript" src="assets/style/slick-1.6.0/slick/slick.min.js"></script>
-
-
-         <script type="text/javascript">
-            $(document).ready(function(){
-
-                $(".home-carousel").slick({
-                    infinite: true,
-                    speed: 500,
-                    fade: true,
-                    cssEase: 'linear',
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    pauseOnHover: false,
-                    centerMode: true,
-                    pauseOnFocus: false
-                });
-
-            });
-        </script>
-
 
     </div>
 
     <br>
 
-    <p><a href="/api/friends">See Friends Table</a></p>
+    <p style="padding-left: 5px"><a href="/api/friends" target="_blank">Friends API</a></p>
     
 </body>
 </html>
