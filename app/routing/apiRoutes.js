@@ -1,3 +1,5 @@
+var path = require("path");
+
 var friends = require("../data/friends");
 
 module.exports = function(app) {
@@ -8,18 +10,17 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
 
-    friends.push(req.body);
-
-    var userScores = friends[friends.length - 1].scores;
+    var userScores = req.body.scores;
     var personIndex = 0;
     var leastDiff = 0;
-    var diff = 0;
+    
 
     for(i = 0; i < friends.length; i++) {
+       var diff = 0;
 
        for(j = 0; j < userScores.length; j++) {
 
-           if(userScores[j] === friends[i].scores[j]) {
+           if(parseInt(userScores[j]) === parseInt(friends[i].scores[j])) {
 
                 diff += 0;
 
@@ -49,9 +50,16 @@ module.exports = function(app) {
 
     }
 
-      res.json(friends[i]);
+      console.log("this returned friends");
+      console.log(friends[personIndex]);
+
+      res.json(friends[personIndex]);
+      friends.push(req.body);
+
 
   });
+
+
 
 };
 
