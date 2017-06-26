@@ -1,7 +1,7 @@
 var friends = [
     {
-        "name":"Donald Drumpf",
-        "photo":"https://i1.wp.com/media.boingboing.net/wp-content/uploads/2017/02/trump-his-eyes-bleeding-1.jpg",
+        "name":"Debura",
+        "photo":"https://static4.comicvine.com/uploads/original/11127/111277291/5168774-4.jpg",
         "scores":[1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
     },
 
